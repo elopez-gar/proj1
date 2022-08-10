@@ -19,6 +19,6 @@ from proj1.views import bienvenida, bienvenidaRojo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bienvenida/', bienvenida)
+    path('bienvenida/', bienvenida),
     path('bienvenida123/', bienvenidaRojo),
 ]
