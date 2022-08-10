@@ -1,4 +1,4 @@
-import ...
+
 from django.http import HttpResponse
 
 # Request: Para realizar peticiones
