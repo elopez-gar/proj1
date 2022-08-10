@@ -1,9 +1,9 @@
 
-from django.http import HttpResponse
+from django.shortcuts import render
 
 # Request: Para realizar peticiones
 # HttpResponse: Para enviar la respuesta usando el protocolo HTTP.
 
 # Esto es una vista
-def bienvenidaRojo(request): # Pasamos un objeto de tipo request como primer argumento
-    return HttpResponse("<p style= 'color: red;'>Bienvenido a esta página de Emmanuel</p>")
+def homepage(request):
+    return render(request, "homepage.html")
