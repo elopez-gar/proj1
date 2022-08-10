@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,7 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        a{color:white;
+        background-color: red;
+        padding: 5px 15px 5px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: block;
+        width: 120px
+        }
+        body
+        {
+            background-image:url({% static 'images/fondo.png' %});
+        }
+    </style>
 
 </head>
 
@@ -14,7 +27,7 @@
     <div id="agrupar">
         <header id="cabecera">
             <h1>
-                <strong>EMMANUEL LOPEZ GARCIA</strong>
+                <strong>MI PRIMER PAGINA EN DIJANGO: EMMANUEL LOPEZ GARCIA</strong>
             </h1>
             <div id="cabecera2">
                 <h2>
